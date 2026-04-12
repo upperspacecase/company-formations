@@ -12,7 +12,7 @@ export default function Home() {
             Start your company anywhere in the world
           </h1>
           <p className="mt-4 text-lg text-muted max-w-xl">
-            Step-by-step formation guides for 20 countries. Official sources,
+            Step-by-step formation guides for 24 countries. Official sources,
             real timelines, exact requirements and costs.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-3">
@@ -37,7 +37,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
             <div>
-              <p className="text-2xl font-bold">20</p>
+              <p className="text-2xl font-bold">24</p>
               <p className="text-sm text-muted">Countries Covered</p>
             </div>
             <div>
@@ -60,7 +60,7 @@ export default function Home() {
       <section id="countries" className="scroll-mt-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <h2 className="text-2xl font-bold mb-2">
-            Top 20 Countries by Ease of Doing Business
+            Browse Countries
           </h2>
           <p className="text-muted mb-8">
             Select a country to see the full step-by-step formation process.

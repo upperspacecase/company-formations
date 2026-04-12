@@ -22,6 +22,10 @@ const flagToEmoji: Record<string, string> = {
   NL: "\u{1F1F3}\u{1F1F1}",
   FI: "\u{1F1EB}\u{1F1EE}",
   DE: "\u{1F1E9}\u{1F1EA}",
+  TH: "\u{1F1F9}\u{1F1ED}",
+  ID: "\u{1F1EE}\u{1F1E9}",
+  VN: "\u{1F1FB}\u{1F1F3}",
+  RU: "\u{1F1F7}\u{1F1FA}",
 };
 
 export function CountryCard({ country }: { country: Country }) {

@@ -30,7 +30,7 @@ export default function PricingPage() {
           <p className="text-sm text-muted mb-6">For anyone exploring</p>
           <ul className="space-y-3 mb-6">
             {[
-              "Full step-by-step guides for all 20 countries",
+              "Full step-by-step guides for all 24 countries",
               "Official links to forms and portals",
               "Timeline and cost estimates",
               "Requirements and documents needed",

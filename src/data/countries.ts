@@ -1753,6 +1753,406 @@ export const countries: Country[] = [
     ],
     lastUpdated: "2026-04-10",
   },
+  {
+    name: "Thailand",
+    slug: "thailand",
+    flag: "TH",
+    region: "Southeast Asia",
+    currency: "THB",
+    language: "Thai",
+    easeOfBusinessRank: 21,
+    corporateTaxRate: "20%",
+    summary:
+      "Thailand is a top digital nomad destination with a growing startup ecosystem. Foreign business ownership requires navigating specific rules around the Foreign Business Act.",
+    keyBenefits: [
+      "Low cost of living and operations",
+      "BOI incentives for promoted businesses",
+      "Growing digital economy",
+      "Strategic ASEAN hub",
+    ],
+    entityTypes: [
+      {
+        name: "Thai Limited Company",
+        slug: "thai-limited-company",
+        description:
+          "The standard structure for doing business in Thailand. Requires at least 3 shareholders. Foreign majority ownership requires a Foreign Business License or BOI promotion.",
+        minCapital: "THB 2,000,000 (for Foreign Business License)",
+        liability: "Limited to share capital",
+        steps: [
+          {
+            number: 1,
+            title: "Reserve a company name",
+            description:
+              "Reserve a company name through the Department of Business Development (DBD) online system.",
+            timeline: "1-2 days",
+            url: "https://www.dbd.go.th/",
+            urlLabel: "Department of Business Development",
+          },
+          {
+            number: 2,
+            title: "Hold a statutory meeting",
+            description:
+              "Convene a statutory meeting of all shareholders to approve the company's articles of association, appoint directors, and approve the auditor.",
+            timeline: "1 day",
+          },
+          {
+            number: 3,
+            title: "Register the company with DBD",
+            description:
+              "File the registration application with the Department of Business Development, including memorandum of association, minutes of statutory meeting, and list of shareholders.",
+            timeline: "1-3 days",
+            url: "https://www.dbd.go.th/",
+            urlLabel: "DBD Registration",
+            cost: "THB 5,000-7,500",
+          },
+          {
+            number: 4,
+            title: "Register for tax with the Revenue Department",
+            description:
+              "Register for corporate income tax and VAT (if turnover exceeds THB 1.8 million) with the Revenue Department.",
+            timeline: "1-5 days",
+            url: "https://www.rd.go.th/",
+            urlLabel: "Revenue Department",
+          },
+          {
+            number: 5,
+            title: "Apply for Foreign Business License (if foreign-owned)",
+            description:
+              "If foreign shareholders hold more than 49%, apply for a Foreign Business License from the Department of Business Development, or seek BOI promotion.",
+            timeline: "3-6 months",
+            url: "https://www.dbd.go.th/",
+            urlLabel: "Foreign Business License",
+            cost: "THB 20,000-500,000",
+          },
+          {
+            number: 6,
+            title: "Open a corporate bank account",
+            description:
+              "Open a business bank account at a Thai bank. Directors typically need to visit the branch in person.",
+            timeline: "1-2 weeks",
+          },
+        ],
+        totalTimeline: "1-2 weeks (Thai-majority) or 3-7 months (foreign-majority)",
+        totalCost: "THB 25,000-500,000+",
+        requirements: [
+          "At least 3 shareholders",
+          "At least 1 director",
+          "Minimum registered capital THB 2M for Foreign Business License",
+          "Registered address in Thailand",
+          "Foreign Business License or BOI promotion if >49% foreign-owned",
+        ],
+        sources: [
+          {
+            label: "Department of Business Development (DBD)",
+            url: "https://www.dbd.go.th/",
+          },
+          {
+            label: "Board of Investment (BOI)",
+            url: "https://www.boi.go.th/",
+          },
+        ],
+      },
+    ],
+    lastUpdated: "2026-04-12",
+  },
+  {
+    name: "Indonesia",
+    slug: "indonesia",
+    flag: "ID",
+    region: "Southeast Asia",
+    currency: "IDR",
+    language: "Indonesian",
+    easeOfBusinessRank: 22,
+    corporateTaxRate: "22%",
+    summary:
+      "Indonesia is Southeast Asia's largest economy with a massive domestic market. The OSS (Online Single Submission) system has simplified business licensing significantly.",
+    keyBenefits: [
+      "Largest economy in Southeast Asia",
+      "270+ million consumer market",
+      "Simplified OSS licensing system",
+      "Growing digital economy",
+    ],
+    entityTypes: [
+      {
+        name: "Foreign-Owned Limited Liability Company (PT PMA)",
+        slug: "pt-pma",
+        description:
+          "Perseroan Terbatas Penanaman Modal Asing (PT PMA) is the standard entity for foreign investors. Allows up to 100% foreign ownership in most sectors.",
+        minCapital: "IDR 10,000,000,000 (approx. USD 625,000)",
+        liability: "Limited to share capital",
+        steps: [
+          {
+            number: 1,
+            title: "Reserve a company name via AHU Online",
+            description:
+              "Reserve the company name through the Ministry of Law and Human Rights' AHU Online system.",
+            timeline: "1-2 days",
+            url: "https://ahu.go.id/",
+            urlLabel: "AHU Online",
+          },
+          {
+            number: 2,
+            title: "Prepare and notarize the deed of establishment",
+            description:
+              "Draft the articles of association and have them notarized by an Indonesian notary. The notary submits the deed to the Ministry.",
+            timeline: "3-7 days",
+            cost: "IDR 5,000,000-15,000,000",
+          },
+          {
+            number: 3,
+            title: "Obtain approval from Ministry of Law and Human Rights",
+            description:
+              "The notary applies for legal entity approval. Upon approval, the company receives its SK (approval letter) and is officially incorporated.",
+            timeline: "1-7 days",
+            url: "https://ahu.go.id/",
+            urlLabel: "AHU Online",
+            cost: "IDR 1,000,000",
+          },
+          {
+            number: 4,
+            title: "Register on OSS for business licenses",
+            description:
+              "Register on the Online Single Submission (OSS) system to obtain your Business Identification Number (NIB) and required business licenses.",
+            timeline: "1-3 days",
+            url: "https://oss.go.id/",
+            urlLabel: "OSS Portal",
+          },
+          {
+            number: 5,
+            title: "Register for tax (NPWP)",
+            description:
+              "Obtain a tax identification number (NPWP) and register for VAT with the Directorate General of Taxes.",
+            timeline: "1-5 days",
+            url: "https://www.pajak.go.id/",
+            urlLabel: "Directorate General of Taxes",
+          },
+          {
+            number: 6,
+            title: "Open a corporate bank account",
+            description:
+              "Open a company bank account at an Indonesian bank. Directors must visit in person.",
+            timeline: "1-2 weeks",
+          },
+        ],
+        totalTimeline: "2-6 weeks",
+        totalCost: "IDR 10,000,000-25,000,000 (excl. capital)",
+        requirements: [
+          "At least 2 shareholders (individual or corporate)",
+          "At least 1 director and 1 commissioner",
+          "Minimum investment IDR 10 billion (approx. USD 625,000)",
+          "Paid-up capital at least IDR 10 billion per shareholder",
+          "Domicile letter / registered address in Indonesia",
+          "Check Positive Investment List for sector restrictions",
+        ],
+        sources: [
+          {
+            label: "BKPM (Investment Coordinating Board)",
+            url: "https://www.bkpm.go.id/",
+          },
+          {
+            label: "OSS (Online Single Submission)",
+            url: "https://oss.go.id/",
+          },
+        ],
+      },
+    ],
+    lastUpdated: "2026-04-12",
+  },
+  {
+    name: "Vietnam",
+    slug: "vietnam",
+    flag: "VN",
+    region: "Southeast Asia",
+    currency: "VND",
+    language: "Vietnamese",
+    easeOfBusinessRank: 23,
+    corporateTaxRate: "20%",
+    summary:
+      "Vietnam is one of the fastest-growing economies in Asia with a young workforce and increasing foreign investment. The government has been actively simplifying business registration.",
+    keyBenefits: [
+      "Fast-growing economy",
+      "Young, skilled workforce",
+      "Competitive labor costs",
+      "Active free trade agreements (CPTPP, EVFTA)",
+    ],
+    entityTypes: [
+      {
+        name: "Limited Liability Company (LLC)",
+        slug: "llc",
+        description:
+          "The most common structure for foreign-invested enterprises in Vietnam. Can have 1 or 2+ members.",
+        minCapital: "No general minimum (sector-specific requirements may apply)",
+        liability: "Limited to charter capital contribution",
+        steps: [
+          {
+            number: 1,
+            title: "Obtain an Investment Registration Certificate (IRC)",
+            description:
+              "Foreign investors must first obtain an IRC from the Department of Planning and Investment (DPI) in the province where the company will be located.",
+            timeline: "15 days (by law)",
+            url: "https://dautunuocngoai.gov.vn/",
+            urlLabel: "Foreign Investment Agency",
+          },
+          {
+            number: 2,
+            title: "Obtain an Enterprise Registration Certificate (ERC)",
+            description:
+              "Apply for the ERC through the National Business Registration Portal. This is your official company registration.",
+            timeline: "3-5 days",
+            url: "https://dangkykinhdoanh.gov.vn/",
+            urlLabel: "National Business Registration Portal",
+            cost: "VND 100,000-200,000",
+          },
+          {
+            number: 3,
+            title: "Carve a company seal",
+            description:
+              "Have the official company seal made and register the seal sample with the business registration office.",
+            timeline: "1-2 days",
+            cost: "VND 300,000-500,000",
+          },
+          {
+            number: 4,
+            title: "Register for tax",
+            description:
+              "Register for tax with the local tax office. Obtain a tax code (usually same as enterprise code).",
+            timeline: "1-5 days",
+            url: "https://www.gdt.gov.vn/",
+            urlLabel: "General Department of Taxation",
+          },
+          {
+            number: 5,
+            title: "Open a corporate bank account and contribute capital",
+            description:
+              "Open a bank account and contribute charter capital within 90 days of receiving the ERC.",
+            timeline: "1-2 weeks",
+          },
+          {
+            number: 6,
+            title: "Obtain sub-licenses (if applicable)",
+            description:
+              "Depending on the business line, additional licenses may be required (e.g., trading license, conditional business license).",
+            timeline: "Varies",
+          },
+        ],
+        totalTimeline: "3-6 weeks",
+        totalCost: "VND 5,000,000-20,000,000+",
+        requirements: [
+          "At least 1 member (for single-member LLC) or 2+ members",
+          "Legal representative residing in Vietnam",
+          "Charter capital (must contribute within 90 days)",
+          "Registered office address in Vietnam",
+          "Investment Registration Certificate (for foreign investors)",
+        ],
+        sources: [
+          {
+            label: "Foreign Investment Agency (FIA)",
+            url: "https://dautunuocngoai.gov.vn/",
+          },
+          {
+            label: "National Business Registration Portal",
+            url: "https://dangkykinhdoanh.gov.vn/",
+          },
+        ],
+      },
+    ],
+    lastUpdated: "2026-04-12",
+  },
+  {
+    name: "Russia",
+    slug: "russia",
+    flag: "RU",
+    region: "Eastern Europe / Central Asia",
+    currency: "RUB",
+    language: "Russian",
+    easeOfBusinessRank: 24,
+    corporateTaxRate: "20%",
+    summary:
+      "Russia has a large domestic market and simplified registration through the Federal Tax Service. However, international sanctions and geopolitical considerations may significantly affect foreign business operations.",
+    keyBenefits: [
+      "Large domestic market (145+ million people)",
+      "Simplified online registration process",
+      "No minimum capital for LLC (symbolic 10,000 RUB)",
+      "SEZ and technology park incentives",
+    ],
+    entityTypes: [
+      {
+        name: "Limited Liability Company (OOO)",
+        slug: "ooo",
+        description:
+          "Obshchestvo s Ogranichennoy Otvetstvennostyu (OOO) is the most common business entity for small and medium enterprises in Russia.",
+        minCapital: "RUB 10,000",
+        liability: "Limited to charter capital contribution",
+        steps: [
+          {
+            number: 1,
+            title: "Prepare founding documents",
+            description:
+              "Draft the charter (articles of association) and the founding decision (for single founder) or founding agreement (for multiple founders).",
+            timeline: "1-3 days",
+          },
+          {
+            number: 2,
+            title: "Register with the Federal Tax Service (FNS)",
+            description:
+              "Submit registration documents to the local Federal Tax Service office or through the online portal. Includes form P11001, charter, founding decision, and proof of legal address.",
+            timeline: "3 business days",
+            url: "https://www.nalog.gov.ru/",
+            urlLabel: "Federal Tax Service",
+            cost: "RUB 4,000 (state duty, free if filed electronically)",
+          },
+          {
+            number: 3,
+            title: "Obtain OGRN and tax registration",
+            description:
+              "Upon successful registration, receive the OGRN (primary state registration number) and tax identification number. The company is automatically registered with the Pension Fund and Social Insurance Fund.",
+            timeline: "Included with registration",
+          },
+          {
+            number: 4,
+            title: "Deposit charter capital",
+            description:
+              "Deposit the minimum RUB 10,000 charter capital within 4 months of registration.",
+            timeline: "Within 4 months",
+          },
+          {
+            number: 5,
+            title: "Open a corporate bank account",
+            description:
+              "Open a settlement account (raschyotny schyot) at a Russian bank. The bank notifies the tax authority automatically.",
+            timeline: "1-3 days",
+          },
+          {
+            number: 6,
+            title: "Obtain necessary licenses and permits",
+            description:
+              "Depending on business activity, obtain required licenses from the relevant regulatory authorities.",
+            timeline: "Varies",
+          },
+        ],
+        totalTimeline: "5-10 days",
+        totalCost: "RUB 4,000-15,000",
+        requirements: [
+          "1-50 founders (individuals or legal entities)",
+          "At least 1 general director",
+          "Minimum charter capital RUB 10,000",
+          "Legal address in Russia",
+          "Foreign founders need notarized and apostilled passport translations",
+        ],
+        sources: [
+          {
+            label: "Federal Tax Service (FNS)",
+            url: "https://www.nalog.gov.ru/",
+          },
+          {
+            label: "Russian Government Services Portal",
+            url: "https://www.gosuslugi.ru/",
+          },
+        ],
+      },
+    ],
+    lastUpdated: "2026-04-12",
+  },
 ];
 
 export function getCountryBySlug(slug: string): Country | undefined {

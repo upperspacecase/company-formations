@@ -39,11 +39,11 @@ export const countries: Country[] = [
             number: 2,
             title: "Register on the Companies Register",
             description:
-              "Complete the online registration form with company details, directors, shareholders, and registered office address.",
+              "Complete the online registration form with company details, directors, shareholders, and registered office address. You will need a RealMe login.",
             timeline: "1 day",
             url: "https://companies-register.companiesoffice.govt.nz/",
             urlLabel: "Companies Register",
-            cost: "NZD 115.02",
+            cost: "NZD 148.05 incl GST (name reservation NZD 11.50 + incorporation NZD 136.55)",
           },
           {
             number: 3,
@@ -63,9 +63,9 @@ export const countries: Country[] = [
           },
         ],
         totalTimeline: "1-10 days",
-        totalCost: "NZD 115-200",
+        totalCost: "NZD 148-250",
         requirements: [
-          "At least 1 director who is a NZ resident or lives in an enforcement country",
+          "At least 1 director who lives in New Zealand (or Australia if also a director of an Australian company)",
           "At least 1 shareholder (can be same person as director)",
           "Registered office address in New Zealand",
           "No minimum share capital",
@@ -216,11 +216,11 @@ export const countries: Country[] = [
             number: 2,
             title: "Submit incorporation documents",
             description:
-              "File the Incorporation Form (NNC1), Articles of Association, and Notice to Business Registration Office via e-Registry.",
-            timeline: "1-4 days",
-            url: "https://www.eregistry.gov.hk/",
-            urlLabel: "e-Registry",
-            cost: "HKD 1,720",
+              "File the Incorporation Form (NNC1), Articles of Association, and Notice to Business Registration Office via e-Services Portal. Electronic certificates are normally issued within 1 hour.",
+            timeline: "Within 1 hour (electronic) or 4 working days (hard copy)",
+            url: "https://www.e-services.cr.gov.hk/",
+            urlLabel: "CR e-Services Portal",
+            cost: "HKD 1,545 (e-filing) or HKD 1,720 (hard copy)",
           },
           {
             number: 3,
@@ -228,7 +228,7 @@ export const countries: Country[] = [
             description:
               "Automatically issued upon incorporation. Annual renewal required.",
             timeline: "Included with incorporation",
-            cost: "HKD 2,150/year",
+            cost: "HKD 2,200/year (rising to HKD 2,350/year from April 2026)",
           },
           {
             number: 4,
@@ -239,7 +239,7 @@ export const countries: Country[] = [
           },
         ],
         totalTimeline: "1-4 days (excl. bank account)",
-        totalCost: "HKD 3,870+",
+        totalCost: "HKD 3,745+ (e-filing)",
         requirements: [
           "At least 1 director (any nationality, natural person)",
           "At least 1 shareholder",
@@ -284,14 +284,14 @@ export const countries: Country[] = [
         slug: "aps",
         description:
           "Anpartsselskab (ApS) is the most common entity for small and medium businesses in Denmark.",
-        minCapital: "DKK 40,000",
+        minCapital: "DKK 20,000",
         liability: "Limited to share capital",
         steps: [
           {
             number: 1,
-            title: "Obtain a digital signature (NemID/MitID)",
+            title: "Obtain a digital signature (MitID)",
             description:
-              "Foreign founders need to apply for a NemID or MitID to access Danish digital services.",
+              "Foreign founders need to apply for MitID to access Danish digital services. NemID has been fully replaced by MitID.",
             timeline: "1-2 weeks (foreign applicants)",
           },
           {
@@ -308,7 +308,7 @@ export const countries: Country[] = [
             number: 3,
             title: "Deposit share capital",
             description:
-              "Deposit minimum DKK 40,000 share capital into a bank account. Obtain a bank statement as proof.",
+              "Deposit minimum DKK 20,000 share capital into a bank account. Obtain a bank statement as proof.",
             timeline: "1-3 days",
           },
           {
@@ -322,10 +322,10 @@ export const countries: Country[] = [
           },
         ],
         totalTimeline: "5-14 days",
-        totalCost: "DKK 40,670+ (including share capital)",
+        totalCost: "DKK 20,670+ (including share capital)",
         requirements: [
           "At least 1 founder",
-          "Minimum share capital of DKK 40,000",
+          "Minimum share capital of DKK 20,000",
           "At least 1 director",
           "Registered business address in Denmark",
           "Articles of association",
@@ -484,20 +484,29 @@ export const countries: Country[] = [
             number: 4,
             title: "Obtain an EIN from the IRS",
             description:
-              "Apply for an Employer Identification Number (EIN) from the Internal Revenue Service. Free and available online.",
-            timeline: "Instant (online) or 4-5 weeks (mail)",
+              "Apply for an Employer Identification Number (EIN) from the Internal Revenue Service. Free and instant online if you have a US address. Foreign applicants without a US address must apply by phone, fax, or mail.",
+            timeline: "Instant (online) or 4-5 weeks (mail/fax)",
             url: "https://www.irs.gov/businesses/small-businesses-self-employed/apply-for-an-employer-identification-number-ein-online",
             urlLabel: "IRS EIN Application",
           },
           {
             number: 5,
+            title: "File Beneficial Ownership Information (BOI) with FinCEN",
+            description:
+              "Report beneficial ownership information to the Financial Crimes Enforcement Network. Required for most LLCs.",
+            timeline: "1 day",
+            url: "https://www.fincen.gov/boi",
+            urlLabel: "FinCEN BOI Filing",
+          },
+          {
+            number: 6,
             title: "Create an Operating Agreement",
             description:
               "Draft an operating agreement outlining ownership structure, management, and profit distribution.",
             timeline: "1-3 days",
           },
           {
-            number: 6,
+            number: 7,
             title: "Open a business bank account",
             description:
               "Open a bank account in the company's name using the EIN and formation documents.",
@@ -563,25 +572,34 @@ export const countries: Country[] = [
           },
           {
             number: 2,
-            title: "Register with Companies House",
+            title: "Verify identity via GOV.UK One Login",
             description:
-              "Register online with Companies House. You'll need director details, shareholder information, registered office address, and SIC codes.",
-            timeline: "24 hours (online)",
+              "Directors must verify their identity through GOV.UK One Login and obtain a Companies House personal code before registering. Each director needs their own code.",
+            timeline: "1-3 days",
             url: "https://www.gov.uk/limited-company-formation",
-            urlLabel: "Register a Company",
-            cost: "GBP 12 (online)",
+            urlLabel: "GOV.UK One Login",
           },
           {
             number: 3,
+            title: "Register with Companies House",
+            description:
+              "Register online with Companies House. You'll need director details, shareholder information, registered office address, and SIC codes.",
+            timeline: "Usually within 24 hours (online)",
+            url: "https://www.gov.uk/limited-company-formation",
+            urlLabel: "Register a Company",
+            cost: "GBP 100 (online) or GBP 124 (postal)",
+          },
+          {
+            number: 4,
             title: "Register for Corporation Tax with HMRC",
             description:
-              "Register with HM Revenue and Customs for Corporation Tax within 3 months of starting business.",
-            timeline: "1-7 days",
+              "When registering online, Corporation Tax is usually set up automatically. Otherwise, register with HMRC within 3 months of starting business.",
+            timeline: "Automatic (online) or 1-7 days",
             url: "https://www.gov.uk/limited-company-formation/set-up-your-company-for-corporation-tax",
             urlLabel: "HMRC Corporation Tax",
           },
           {
-            number: 4,
+            number: 5,
             title: "Register for VAT (if applicable)",
             description:
               "Register for VAT if turnover exceeds GBP 90,000 or voluntarily if below threshold.",
@@ -590,7 +608,7 @@ export const countries: Country[] = [
             urlLabel: "VAT Registration",
           },
           {
-            number: 5,
+            number: 6,
             title: "Open a business bank account",
             description:
               "Open a business bank account. Many UK banks and fintechs offer online applications.",
@@ -598,7 +616,7 @@ export const countries: Country[] = [
           },
         ],
         totalTimeline: "1-7 days",
-        totalCost: "GBP 12-50",
+        totalCost: "GBP 100-124",
         requirements: [
           "At least 1 director (any nationality, age 16+)",
           "At least 1 shareholder",
@@ -654,7 +672,7 @@ export const countries: Country[] = [
             timeline: "1-3 days",
             url: "https://www.altinn.no/",
             urlLabel: "Altinn",
-            cost: "NOK 5,570",
+            cost: "NOK 6,825 (digital) or NOK 7,912 (postal)",
           },
           {
             number: 2,
@@ -683,7 +701,7 @@ export const countries: Country[] = [
           },
         ],
         totalTimeline: "5-14 days",
-        totalCost: "NOK 35,570+ (including share capital)",
+        totalCost: "NOK 36,825+ (including share capital)",
         requirements: [
           "At least 1 shareholder",
           "Board of directors (at least 1 member)",
@@ -870,11 +888,11 @@ export const countries: Country[] = [
     currency: "EUR",
     language: "Lithuanian",
     easeOfBusinessRank: 11,
-    corporateTaxRate: "15% (5% for small companies)",
+    corporateTaxRate: "17% (7% for small companies; 0% for first 2 tax years for qualifying new companies)",
     summary:
       "Lithuania offers a fast, affordable company formation process with EU access and competitive tax rates for small businesses.",
     keyBenefits: [
-      "Low tax rate for small companies (5%)",
+      "Low tax rate for small companies (7%; 0% for first 2 years)",
       "EU and Eurozone member",
       "Fintech-friendly regulation",
       "Fast online registration",
@@ -885,7 +903,7 @@ export const countries: Country[] = [
         slug: "uab",
         description:
           "Uzdara Akcine Bendrove (UAB) is the most popular entity type in Lithuania.",
-        minCapital: "EUR 2,500",
+        minCapital: "EUR 1,000",
         liability: "Limited to share capital",
         steps: [
           {
@@ -901,7 +919,7 @@ export const countries: Country[] = [
             number: 2,
             title: "Open a temporary bank account and deposit capital",
             description:
-              "Deposit minimum EUR 2,500 share capital into a temporary account.",
+              "Deposit minimum EUR 1,000 share capital into a temporary account.",
             timeline: "1-3 days",
           },
           {
@@ -920,7 +938,7 @@ export const countries: Country[] = [
             timeline: "1-3 days",
             url: "https://www.registrucentras.lt/",
             urlLabel: "Register of Legal Entities",
-            cost: "EUR 53",
+            cost: "EUR 14 (electronic) or EUR 31 (paper)",
           },
           {
             number: 5,
@@ -933,11 +951,11 @@ export const countries: Country[] = [
           },
         ],
         totalTimeline: "5-14 days",
-        totalCost: "EUR 2,600-2,750",
+        totalCost: "EUR 1,065-1,200",
         requirements: [
           "At least 1 shareholder (individual or legal entity)",
           "At least 1 director",
-          "Minimum share capital EUR 2,500",
+          "Minimum share capital EUR 1,000",
           "Registered address in Lithuania",
           "Notarized articles of association",
         ],
@@ -1066,10 +1084,10 @@ export const countries: Country[] = [
             title: "Apply for e-Residency (if non-resident)",
             description:
               "Apply for an Estonian e-Residency digital ID card to access Estonian digital services remotely.",
-            timeline: "3-6 weeks",
+            timeline: "3-8 weeks (1-4 weeks review + 2-5 weeks delivery)",
             url: "https://www.e-resident.gov.ee/",
             urlLabel: "e-Residency Portal",
-            cost: "EUR 100-120",
+            cost: "EUR 150 (state fee, effective January 2025)",
           },
           {
             number: 2,
@@ -1098,8 +1116,8 @@ export const countries: Country[] = [
             timeline: "1-4 weeks",
           },
         ],
-        totalTimeline: "1-3 days (with e-Residency) or 4-8 weeks (new e-Residency application)",
-        totalCost: "EUR 265-385",
+        totalTimeline: "1-3 days (with e-Residency) or 4-11 weeks (new e-Residency application)",
+        totalCost: "EUR 265 (existing e-Resident) or EUR 415 (new e-Residency application)",
         requirements: [
           "At least 1 shareholder",
           "At least 1 board member",
@@ -1163,7 +1181,7 @@ export const countries: Country[] = [
             timeline: "1-3 days",
             url: "https://connectonline.asic.gov.au/",
             urlLabel: "ASIC Connect",
-            cost: "AUD 576",
+            cost: "AUD 611",
           },
           {
             number: 3,
@@ -1192,7 +1210,7 @@ export const countries: Country[] = [
           },
         ],
         totalTimeline: "3-10 days",
-        totalCost: "AUD 576+",
+        totalCost: "AUD 611+",
         requirements: [
           "At least 1 director (ordinarily resident in Australia)",
           "At least 1 shareholder (max 50 for Pty Ltd)",
@@ -1250,11 +1268,11 @@ export const countries: Country[] = [
             number: 2,
             title: "File Articles of Incorporation",
             description:
-              "File online through Corporations Canada using the Online Filing Centre.",
-            timeline: "1-5 days",
-            url: "https://ised-isde.canada.ca/cc/lgcy/fdrlCrpStp.html",
+              "File online through Corporations Canada. NUANS search is now integrated into the online process.",
+            timeline: "1 business day (online) or 10 business days (mail)",
+            url: "https://ised-isde.canada.ca/site/corporations-canada/en",
             urlLabel: "Corporations Canada",
-            cost: "CAD 200 (online) or CAD 250 (mail)",
+            cost: "CAD 200 (online) or CAD 250 (mail); express service +CAD 100",
           },
           {
             number: 3,
@@ -1281,8 +1299,8 @@ export const countries: Country[] = [
             timeline: "1-5 days",
           },
         ],
-        totalTimeline: "5-14 days",
-        totalCost: "CAD 215-500",
+        totalTimeline: "2-14 days",
+        totalCost: "CAD 214-350",
         requirements: [
           "At least 1 director (25% must be Canadian residents)",
           "At least 1 shareholder",
@@ -1293,7 +1311,7 @@ export const countries: Country[] = [
         sources: [
           {
             label: "Corporations Canada",
-            url: "https://ised-isde.canada.ca/cc/lgcy/fdrlCrpStp.html",
+            url: "https://ised-isde.canada.ca/site/corporations-canada/en",
           },
           {
             label: "Canada Revenue Agency",
@@ -1343,8 +1361,8 @@ export const countries: Country[] = [
             number: 2,
             title: "File incorporation documents with CRO",
             description:
-              "Submit Form A1 (incorporation form), constitution, and consent forms via CORE online system.",
-            timeline: "5-10 days",
+              "Submit Form A1 (incorporation form), constitution, and consent forms via CORE online system. Processing times vary; CRO publishes daily updates.",
+            timeline: "15-30 days (processing backlogs vary)",
             url: "https://core.cro.ie/",
             urlLabel: "CRO CORE System",
             cost: "EUR 50 (online)",
@@ -1366,8 +1384,8 @@ export const countries: Country[] = [
             timeline: "1-2 weeks",
           },
         ],
-        totalTimeline: "7-20 days",
-        totalCost: "EUR 50-100",
+        totalTimeline: "15-35 days",
+        totalCost: "EUR 50-65",
         requirements: [
           "At least 1 director (at least 1 must be EEA resident, or obtain a bond)",
           "At least 1 shareholder",
@@ -1397,7 +1415,7 @@ export const countries: Country[] = [
     currency: "AED",
     language: "Arabic / English",
     easeOfBusinessRank: 17,
-    corporateTaxRate: "9% (above AED 375,000) / 0% in free zones (qualifying)",
+    corporateTaxRate: "0% up to AED 375,000 / 9% above / 0% on qualifying free zone income",
     summary:
       "The UAE offers tax-efficient business structures through free zones and mainland options, with 100% foreign ownership now available.",
     keyBenefits: [
@@ -1435,7 +1453,7 @@ export const countries: Country[] = [
             description:
               "Submit the application form, passport copies, business plan, and other required documents to the free zone authority.",
             timeline: "3-10 days",
-            cost: "AED 10,000-50,000 (varies by free zone)",
+            cost: "AED 15,000-50,000 (varies by free zone; DMCC all-inclusive starts at AED 35,484)",
           },
           {
             number: 4,
@@ -1460,7 +1478,7 @@ export const countries: Country[] = [
           },
         ],
         totalTimeline: "2-8 weeks",
-        totalCost: "AED 15,000-55,000+",
+        totalCost: "AED 35,000-50,000+ (varies by free zone)",
         requirements: [
           "Valid passport",
           "Business plan (for some free zones)",
@@ -1480,7 +1498,7 @@ export const countries: Country[] = [
         ],
       },
     ],
-    lastUpdated: "2026-04-10",
+    lastUpdated: "2026-04-12",
   },
   {
     name: "Netherlands",
@@ -1523,15 +1541,15 @@ export const countries: Country[] = [
             description:
               "A Dutch civil-law notary must execute the deed of incorporation, including articles of association. This is mandatory.",
             timeline: "1-5 days",
-            cost: "EUR 500-1,500",
+            cost: "EUR 500-1,000",
           },
           {
             number: 3,
             title: "Register with KVK",
             description:
-              "The notary registers the company with the Trade Register at KVK. You receive a KVK number and RSIN.",
+              "The notary registers the company with the Trade Register at KVK. You receive a KVK number and RSIN. Digital formation via audio-video with notary is now available.",
             timeline: "1 day",
-            cost: "EUR 75",
+            cost: "EUR 85.15 (as of January 2026, adjusted annually)",
           },
           {
             number: 4,
@@ -1551,7 +1569,7 @@ export const countries: Country[] = [
           },
         ],
         totalTimeline: "1-4 weeks",
-        totalCost: "EUR 575-1,600",
+        totalCost: "EUR 585-1,085",
         requirements: [
           "At least 1 shareholder",
           "At least 1 director (any nationality)",
@@ -1596,31 +1614,31 @@ export const countries: Country[] = [
         slug: "oy",
         description:
           "Osakeyhtio (Oy) is the standard limited liability company in Finland.",
-        minCapital: "EUR 2,500",
+        minCapital: "EUR 0 (share capital is now optional)",
         liability: "Limited to share capital",
         steps: [
           {
             number: 1,
             title: "Register online via YTJ",
             description:
-              "Submit the startup notification through the Business Information System (YTJ) online service.",
+              "Submit the startup notification through the Business Information System (YTJ) online service. As of January 2026, all notifications must be filed online (paper forms no longer accepted). YTJ is available in Finnish and Swedish only.",
             timeline: "1-5 days",
             url: "https://www.ytj.fi/",
             urlLabel: "YTJ Business Information System",
-            cost: "EUR 240 (online)",
+            cost: "EUR 300 (guided package, 0 share capital) or EUR 400 (start-up notification, with share capital or foreign directors)",
           },
           {
             number: 2,
-            title: "Deposit share capital",
+            title: "Deposit share capital (if applicable)",
             description:
-              "Deposit minimum EUR 2,500 share capital into the company's bank account.",
+              "If the company has share capital, deposit it into the company's bank account. Share capital is now optional -- companies can register with EUR 0.",
             timeline: "1-3 days",
           },
           {
             number: 3,
             title: "Register with the Trade Register",
             description:
-              "Complete registration with the Finnish Patent and Registration Office (PRH).",
+              "PRH processes the Trade Register part of your YTJ notification. Beneficial owner details must be filed simultaneously.",
             timeline: "1-5 days",
             url: "https://www.prh.fi/",
             urlLabel: "PRH (Patent and Registration Office)",
@@ -1629,20 +1647,20 @@ export const countries: Country[] = [
             number: 4,
             title: "Register with the Tax Administration",
             description:
-              "Register for VAT, employer register, and prepayment register with Vero.",
-            timeline: "1-5 days",
+              "Register for VAT (rate is 25.5% since September 2024), employer register, and prepayment register with Vero. VAT registration takes approximately 3 weeks.",
+            timeline: "~3 weeks",
             url: "https://www.vero.fi/",
             urlLabel: "Finnish Tax Administration",
           },
         ],
-        totalTimeline: "5-14 days",
-        totalCost: "EUR 2,740+ (including share capital)",
+        totalTimeline: "5-30 days",
+        totalCost: "EUR 300-400+",
         requirements: [
           "At least 1 shareholder",
           "Board of directors with at least 1 member",
-          "Minimum share capital EUR 2,500",
+          "Share capital is optional (EUR 0 minimum)",
           "Registered address in Finland",
-          "At least 1 board member resident in EEA",
+          "At least 1 board member resident in EEA (permit needed otherwise)",
         ],
         sources: [
           {
@@ -1799,11 +1817,11 @@ export const countries: Country[] = [
             number: 3,
             title: "Register the company with DBD",
             description:
-              "File the registration application with the Department of Business Development, including memorandum of association, minutes of statutory meeting, and list of shareholders.",
+              "File the registration application through the DBD Biz Regist digital platform (mandatory since July 2025), including memorandum of association, minutes of statutory meeting, and list of shareholders.",
             timeline: "1-3 days",
             url: "https://www.dbd.go.th/",
             urlLabel: "DBD Registration",
-            cost: "THB 5,000-7,500",
+            cost: "~THB 15,700 total (incorporation fee THB 5,500+ plus MOA registration fee based on capital)",
           },
           {
             number: 4,
@@ -1833,7 +1851,7 @@ export const countries: Country[] = [
           },
         ],
         totalTimeline: "1-2 weeks (Thai-majority) or 3-7 months (foreign-majority)",
-        totalCost: "THB 25,000-500,000+",
+        totalCost: "THB 15,700+ (Thai-majority) or THB 35,000-500,000+ (foreign-majority with FBL)",
         requirements: [
           "At least 3 shareholders",
           "At least 1 director",
@@ -1878,7 +1896,7 @@ export const countries: Country[] = [
         slug: "pt-pma",
         description:
           "Perseroan Terbatas Penanaman Modal Asing (PT PMA) is the standard entity for foreign investors. Allows up to 100% foreign ownership in most sectors.",
-        minCapital: "IDR 10,000,000,000 (approx. USD 625,000)",
+        minCapital: "IDR 2.5B paid-up / IDR 10B total investment plan per KBLI/location",
         liability: "Limited to share capital",
         steps: [
           {
@@ -1939,8 +1957,8 @@ export const countries: Country[] = [
         requirements: [
           "At least 2 shareholders (individual or corporate)",
           "At least 1 director and 1 commissioner",
-          "Minimum investment IDR 10 billion (approx. USD 625,000)",
-          "Paid-up capital at least IDR 10 billion per shareholder",
+          "Minimum total investment plan IDR 10 billion per KBLI code/location (excl. land/buildings)",
+          "Minimum paid-up capital IDR 2.5 billion (Ministerial Regulation No. 5/2025)",
           "Domicile letter / registered address in Indonesia",
           "Check Positive Investment List for sector restrictions",
         ],
@@ -1997,11 +2015,11 @@ export const countries: Country[] = [
             number: 2,
             title: "Obtain an Enterprise Registration Certificate (ERC)",
             description:
-              "Apply for the ERC through the National Business Registration Portal. This is your official company registration.",
+              "Apply for the ERC through the National Business Registration Portal. This is your official company registration. As of 2026, the IRC/ERC sequence is flexible -- investors can obtain ERC first, then IRC.",
             timeline: "3-5 days",
             url: "https://dangkykinhdoanh.gov.vn/",
             urlLabel: "National Business Registration Portal",
-            cost: "VND 100,000-200,000",
+            cost: "VND 100,000-150,000 (registration + portal announcement fee)",
           },
           {
             number: 3,
@@ -2009,7 +2027,7 @@ export const countries: Country[] = [
             description:
               "Have the official company seal made and register the seal sample with the business registration office.",
             timeline: "1-2 days",
-            cost: "VND 300,000-500,000",
+            cost: "VND 200,000-500,000",
           },
           {
             number: 4,

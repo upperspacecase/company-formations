@@ -71,6 +71,29 @@ export default async function CountryPage({
         </div>
       </div>
 
+      {/* Setup & Eligibility */}
+      <div className="mb-10">
+        <h2 className="text-xl font-bold mb-4">Setup &amp; Eligibility</h2>
+        <div className="grid sm:grid-cols-2 gap-4 mb-4">
+          <div className="bg-card border border-border rounded-lg p-4">
+            <p className="text-xs text-muted mb-1">Setup Cost (USD)</p>
+            <p className="font-semibold text-sm">{country.setupCostUSD}</p>
+            <p className="text-xs text-muted mt-2">
+              Converted from local currency at approximate fixed rates. See
+              entity sections below for native-currency figures.
+            </p>
+          </div>
+          <div className="bg-card border border-border rounded-lg p-4">
+            <p className="text-xs text-muted mb-1">Minimum Age</p>
+            <p className="font-semibold text-sm">{country.minimumAge}</p>
+          </div>
+        </div>
+        <div className="bg-card border border-border rounded-lg p-4">
+          <p className="text-xs text-muted mb-1">Residency Requirement</p>
+          <p className="text-sm">{country.residencyRequirement}</p>
+        </div>
+      </div>
+
       {/* Key Benefits */}
       <div className="mb-10">
         <h2 className="text-xl font-bold mb-4">Key Benefits</h2>

@@ -10,6 +10,10 @@ export const countries: Country[] = [
     language: "English",
     easeOfBusinessRank: 1,
     corporateTaxRate: "28%",
+    setupCostUSD: "~$90-150",
+    residencyRequirement:
+      "At least one director must ordinarily reside in New Zealand (or Australia if also a director of an Australian-registered company).",
+    minimumAge: "18",
     summary:
       "New Zealand consistently ranks as one of the easiest places in the world to start a business. Online registration takes as little as one day.",
     keyBenefits: [
@@ -93,6 +97,10 @@ export const countries: Country[] = [
     language: "English",
     easeOfBusinessRank: 2,
     corporateTaxRate: "17%",
+    setupCostUSD: "~$235+",
+    residencyRequirement:
+      "At least one director must be ordinarily resident in Singapore (Citizen, PR, or EntrePass holder).",
+    minimumAge: "18",
     summary:
       "Singapore is a global business hub with a pro-business environment, low taxes, and a highly efficient registration process.",
     keyBenefits: [
@@ -186,6 +194,10 @@ export const countries: Country[] = [
     language: "English / Chinese",
     easeOfBusinessRank: 3,
     corporateTaxRate: "8.25% (first HKD 2M) / 16.5%",
+    setupCostUSD: "~$480+",
+    residencyRequirement:
+      "No residency requirement for directors — 100% foreign ownership allowed. If the company secretary is a natural person, they must reside in Hong Kong.",
+    minimumAge: "18",
     summary:
       "Hong Kong offers a simple tax system, no VAT/GST, and is a major gateway for doing business in China and Asia.",
     keyBenefits: [
@@ -270,6 +282,10 @@ export const countries: Country[] = [
     language: "Danish",
     easeOfBusinessRank: 4,
     corporateTaxRate: "22%",
+    setupCostUSD: "~$3,000+ (including share capital)",
+    residencyRequirement:
+      "No residency requirement — directors and owners do not need to be Danish or EU residents (non-EU/EEA individuals running day-to-day management must have the legal right to work in the EU/EEA).",
+    minimumAge: "18",
     summary:
       "Denmark offers a transparent business environment with fully digital registration and strong worker protections.",
     keyBenefits: [
@@ -353,6 +369,10 @@ export const countries: Country[] = [
     language: "Korean",
     easeOfBusinessRank: 5,
     corporateTaxRate: "9-24% (progressive)",
+    setupCostUSD: "~$380-1,140",
+    residencyRequirement:
+      "No residency requirement — a foreigner may serve as representative director without residing in Korea.",
+    minimumAge: "19",
     summary:
       "South Korea has streamlined business registration significantly, with strong government support for startups and innovation.",
     keyBenefits: [
@@ -442,6 +462,10 @@ export const countries: Country[] = [
     language: "English",
     easeOfBusinessRank: 6,
     corporateTaxRate: "21% federal + state taxes",
+    setupCostUSD: "$50-800",
+    residencyRequirement:
+      "No residency requirement — 100% foreign ownership of a Delaware LLC is permitted (a Delaware registered agent is required).",
+    minimumAge: "No statutory minimum (Delaware LLC)",
     summary:
       "The US offers multiple state-level options for incorporation, with Delaware and Wyoming being the most popular for their business-friendly laws.",
     keyBenefits: [
@@ -544,6 +568,10 @@ export const countries: Country[] = [
     language: "English",
     easeOfBusinessRank: 7,
     corporateTaxRate: "19-25%",
+    setupCostUSD: "~$125-160",
+    residencyRequirement:
+      "No residency requirement — non-UK residents can be sole director and shareholder (UK registered office required).",
+    minimumAge: "16",
     summary:
       "The UK offers one of the fastest and cheapest company registration processes in the world, fully available online through Companies House.",
     keyBenefits: [
@@ -647,6 +675,10 @@ export const countries: Country[] = [
     language: "Norwegian",
     easeOfBusinessRank: 8,
     corporateTaxRate: "22%",
+    setupCostUSD: "~$3,460+ (including share capital)",
+    residencyRequirement:
+      "At least half of board members (and the managing director) must reside in Norway or another EEA country; exemption available from Brønnøysund.",
+    minimumAge: "18",
     summary:
       "Norway offers a stable, transparent business environment with digital-first government services and access to the EEA market.",
     keyBenefits: [
@@ -732,6 +764,10 @@ export const countries: Country[] = [
     language: "Georgian",
     easeOfBusinessRank: 9,
     corporateTaxRate: "15% (only on distributed profits)",
+    setupCostUSD: "~$35-110",
+    residencyRequirement:
+      "No residency requirement — 100% foreign ownership allowed with no mandatory local director or shareholder.",
+    minimumAge: "18 (Georgian civil-code age of majority; not explicitly stated on the Public Registry)",
     summary:
       "Georgia has one of the most business-friendly environments globally, with extremely fast registration and a unique 'Estonian model' tax system where profits are only taxed when distributed.",
     keyBenefits: [
@@ -813,6 +849,10 @@ export const countries: Country[] = [
     language: "Swedish",
     easeOfBusinessRank: 10,
     corporateTaxRate: "20.6%",
+    setupCostUSD: "~$2,580+ (including share capital)",
+    residencyRequirement:
+      "At least half of board members, half of deputies, and the managing director must reside within the EEA; exemption available from Bolagsverket.",
+    minimumAge: "18",
     summary:
       "Sweden combines a strong innovation ecosystem with straightforward company registration through the Swedish Companies Registration Office.",
     keyBenefits: [
@@ -889,6 +929,10 @@ export const countries: Country[] = [
     language: "Lithuanian",
     easeOfBusinessRank: 11,
     corporateTaxRate: "17% (7% for small companies; 0% for first 2 tax years for qualifying new companies)",
+    setupCostUSD: "~$1,150-1,300",
+    residencyRequirement:
+      "No residency requirement — foreign nationals may be sole director and shareholder.",
+    minimumAge: "18 (Lithuanian civil-code age of majority; not explicitly stated on Registrų centras)",
     summary:
       "Lithuania offers a fast, affordable company formation process with EU access and competitive tax rates for small businesses.",
     keyBenefits: [
@@ -982,6 +1026,10 @@ export const countries: Country[] = [
     language: "Malay / English",
     easeOfBusinessRank: 12,
     corporateTaxRate: "24% (17% for first MYR 600k for SMEs)",
+    setupCostUSD: "~$220+",
+    residencyRequirement:
+      "At least one director must ordinarily reside in Malaysia (principal place of residence in Malaysia).",
+    minimumAge: "18",
     summary:
       "Malaysia offers a cost-effective business environment with strong infrastructure, multicultural workforce, and access to ASEAN markets.",
     keyBenefits: [
@@ -1062,6 +1110,10 @@ export const countries: Country[] = [
     language: "Estonian",
     easeOfBusinessRank: 13,
     corporateTaxRate: "0% (retained) / 20% (distributed)",
+    setupCostUSD: "~$285-450",
+    residencyRequirement:
+      "No residency requirement — board members need not reside in Estonia; foreigners may form and own 100% via e-Residency.",
+    minimumAge: "18",
     summary:
       "Estonia pioneered e-Residency, allowing anyone in the world to register and manage a company fully online. Retained profits are tax-free.",
     keyBenefits: [
@@ -1148,6 +1200,10 @@ export const countries: Country[] = [
     language: "English",
     easeOfBusinessRank: 14,
     corporateTaxRate: "25% (30% for large entities)",
+    setupCostUSD: "~$400+",
+    residencyRequirement:
+      "At least one director must ordinarily reside in Australia (Corporations Act 2001, s.201A).",
+    minimumAge: "18",
     summary:
       "Australia offers a straightforward online registration process through ASIC, with strong legal protections and a stable economy.",
     keyBenefits: [
@@ -1240,6 +1296,10 @@ export const countries: Country[] = [
     language: "English / French",
     easeOfBusinessRank: 15,
     corporateTaxRate: "15% federal + provincial (combined 25-31%)",
+    setupCostUSD: "~$160-260",
+    residencyRequirement:
+      "Federal (CBCA): at least 25% of directors must be resident Canadians (if fewer than 4 directors, at least one must be resident Canadian). Several provinces (e.g. BC, Ontario, Alberta) have removed residency requirements.",
+    minimumAge: "18",
     summary:
       "Canada offers federal or provincial incorporation options, with a stable economy and access to North American markets via CUSMA.",
     keyBenefits: [
@@ -1331,6 +1391,10 @@ export const countries: Country[] = [
     language: "English / Irish",
     easeOfBusinessRank: 16,
     corporateTaxRate: "12.5% (trading) / 25% (non-trading)",
+    setupCostUSD: "~$55-70",
+    residencyRequirement:
+      "At least one director must reside in an EEA member state; exemption possible via a €25,000 bond or Revenue-certified economic link with the State.",
+    minimumAge: "18",
     summary:
       "Ireland is a major hub for international businesses due to its low corporate tax rate, EU membership, and English-speaking workforce.",
     keyBenefits: [
@@ -1416,6 +1480,10 @@ export const countries: Country[] = [
     language: "Arabic / English",
     easeOfBusinessRank: 17,
     corporateTaxRate: "0% up to AED 375,000 / 9% above / 0% on qualifying free zone income",
+    setupCostUSD: "~$9,500-13,600+ (varies by free zone)",
+    residencyRequirement:
+      "Generally no residency requirement in free zones — 100% foreign ownership permitted. Some free zones (e.g. JAFZA) require the manager to hold a UAE residence visa.",
+    minimumAge: "18",
     summary:
       "The UAE offers tax-efficient business structures through free zones and mainland options, with 100% foreign ownership now available.",
     keyBenefits: [
@@ -1509,6 +1577,10 @@ export const countries: Country[] = [
     language: "Dutch",
     easeOfBusinessRank: 18,
     corporateTaxRate: "19% (first EUR 200k) / 25.8%",
+    setupCostUSD: "~$630-1,170",
+    residencyRequirement:
+      "No residency requirement — non-resident individuals and foreign entities may serve as directors.",
+    minimumAge: "18",
     summary:
       "The Netherlands is a gateway to Europe with an extensive tax treaty network, highly skilled workforce, and a competitive corporate tax structure.",
     keyBenefits: [
@@ -1600,6 +1672,10 @@ export const countries: Country[] = [
     language: "Finnish / Swedish",
     easeOfBusinessRank: 19,
     corporateTaxRate: "20%",
+    setupCostUSD: "~$325-430+",
+    residencyRequirement:
+      "At least one board member (and deputy, if any) and the managing director must reside in the EEA; PRH may grant an exemption to non-EEA residents.",
+    minimumAge: "18",
     summary:
       "Finland offers a transparent, low-corruption business environment with strong digital infrastructure and EU market access.",
     keyBenefits: [
@@ -1685,6 +1761,10 @@ export const countries: Country[] = [
     language: "German",
     easeOfBusinessRank: 20,
     corporateTaxRate: "15% + 5.5% solidarity surcharge + trade tax (~30% effective)",
+    setupCostUSD: "~$13,700-16,200+ (including minimum share capital deposit)",
+    residencyRequirement:
+      "No residency requirement — managing directors (Geschäftsführer) can be of any nationality or country of residence (§ 6 GmbHG).",
+    minimumAge: "18",
     summary:
       "Germany is Europe's largest economy, offering access to a massive consumer market and a highly skilled workforce, though the formation process involves more steps than some countries.",
     keyBenefits: [
@@ -1780,6 +1860,10 @@ export const countries: Country[] = [
     language: "Thai",
     easeOfBusinessRank: 21,
     corporateTaxRate: "20%",
+    setupCostUSD: "~$440+ (Thai-majority) or ~$980-14,000+ (foreign-majority with FBL)",
+    residencyRequirement:
+      "No residency requirement for directors. A foreign director physically working in Thailand requires a work permit.",
+    minimumAge: "20 (directors); no statutory minimum for shareholders",
     summary:
       "Thailand is a top digital nomad destination with a growing startup ecosystem. Foreign business ownership requires navigating specific rules around the Foreign Business Act.",
     keyBenefits: [
@@ -1882,6 +1966,10 @@ export const countries: Country[] = [
     language: "Indonesian",
     easeOfBusinessRank: 22,
     corporateTaxRate: "22%",
+    setupCostUSD: "~$630-1,575 (excluding capital)",
+    residencyRequirement:
+      "The director must be domiciled in Indonesia (foreign directors need a KITAS/work permit). Shareholders may be 100% foreign.",
+    minimumAge: "18 (Indonesian civil-code age of majority; not explicitly stated on BKPM/OSS)",
     summary:
       "Indonesia is Southeast Asia's largest economy with a massive domestic market. The OSS (Online Single Submission) system has simplified business licensing significantly.",
     keyBenefits: [
@@ -1985,6 +2073,10 @@ export const countries: Country[] = [
     language: "Vietnamese",
     easeOfBusinessRank: 23,
     corporateTaxRate: "20%",
+    setupCostUSD: "~$195-780+",
+    residencyRequirement:
+      "At least one legal representative must reside in Vietnam (maintain a Vietnamese residential address). 100% foreign ownership is generally permitted in most sectors.",
+    minimumAge: "18",
     summary:
       "Vietnam is one of the fastest-growing economies in Asia with a young workforce and increasing foreign investment. The government has been actively simplifying business registration.",
     keyBenefits: [
@@ -2085,6 +2177,10 @@ export const countries: Country[] = [
     language: "Russian",
     easeOfBusinessRank: 24,
     corporateTaxRate: "20%",
+    setupCostUSD: "~$45-165",
+    residencyRequirement:
+      "No residency requirement for founders/shareholders (100% foreign ownership allowed). A foreign general director typically needs a Russian work or residence permit unless covered by EAEU treaty (Belarus, Kazakhstan, Kyrgyzstan, Armenia).",
+    minimumAge: "18",
     summary:
       "Russia has a large domestic market and simplified registration through the Federal Tax Service. However, international sanctions and geopolitical considerations may significantly affect foreign business operations.",
     keyBenefits: [

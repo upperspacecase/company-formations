@@ -31,6 +31,9 @@ export interface Country {
   language: string;
   easeOfBusinessRank: number;
   corporateTaxRate: string;
+  setupCostUSD: string;
+  residencyRequirement: string;
+  minimumAge: string;
   summary: string;
   entityTypes: EntityType[];
   keyBenefits: string[];
